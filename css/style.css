@@ -52,7 +52,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: blue; */
+
 
 }
 
@@ -73,7 +73,7 @@ nav ul li img {
     width: 100%;
     position: absolute;
     bottom: 10px;
-    height: 40px;
+    height: 33px;
 
 
 }
@@ -102,7 +102,6 @@ nav ul li img {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     position: relative;
-    background-color: green;
 
 }
 
@@ -110,9 +109,8 @@ nav ul li img {
     width: 85%;
     height: 100%;
     position: absolute;
-    /* background: blueviolet; */
-
-   
+    display: flex;
+    justify-content: end;
     
 }
 
@@ -142,10 +140,12 @@ nav ul li img {
 
 .end {
     width: 10%;
+    height: 100%;
     position: absolute;
     right: 0;
-    /* bottom: 2.5px; */
-    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+
 }
 
 .end > button {
@@ -169,7 +169,15 @@ nav ul li img {
 }
 
 .casa {
+    height: 48px;
     position: fixed;
-    background-color: #e21111;
+    top: 0;
+    background-color:  #232323cb; 
+    transition: background-color 0.5s;
+    border-bottom: 1px solid #484848;
+
 }
 
+.remove {
+    border: none;
+}

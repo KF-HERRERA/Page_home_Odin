@@ -42,27 +42,24 @@ Promise
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Obtener el elemento div
     var miDiv = document.getElementById("fixed");
+    var miNav = document.getElementById("nav-header");
 
-    // Obtener la posición original del div
     var divOriginalTop = miDiv.offsetTop;
 
-    // Función para manejar el evento de scroll
     function handleScroll() {
-      // Obtener la posición actual del scroll
+
       var scrollPos = window.scrollY;
 
-      // Comprobar si el scroll está por encima de cierto umbral
-      if (scrollPos > divOriginalTop - 50) {
-        // Si es así, agregar la clase 'fixed' al div
+      if (scrollPos > divOriginalTop - 9) {
         miDiv.classList.add("casa");
+        miNav.classList.add("remove")
       } else {
-        // De lo contrario, quitar la clase 'fixed'
+ 
         miDiv.classList.remove("casa");
+        miNav.classList.remove("remove");
       }
     }
 
-    // Asociar la función handleScroll al evento de scroll
     window.addEventListener("scroll", handleScroll);
   });
