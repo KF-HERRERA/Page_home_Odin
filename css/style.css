@@ -1,3 +1,13 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
 html {
     height: 100vh;
 }
@@ -16,3 +26,150 @@ canvas {
     max-width: 100vw;
     max-height: 100vh;
 }
+
+.container-nav {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+ 
+
+}
+
+nav {
+    width: 970px;
+    border-bottom: solid 1px rgba(126, 126, 126, 0.625);
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* background-color: #e21111; */
+}
+
+nav ul {
+    height: 50px;
+    width: 970px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: blue; */
+
+}
+
+nav ul li  a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(148, 148, 149);
+    font-size: 12px;
+    font-weight: 400;
+}
+nav ul li img {
+    height: 17px;
+    filter: invert(90%);
+
+}
+
+.fixed {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    height: 40px;
+
+
+}
+
+.content-fixed {
+    width: 970px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.airpods {
+    width: 50%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(217, 220, 210);
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 10px;
+    bottom: 19px;
+
+}
+
+.fixed-ul {
+    width: 50%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    background-color: green;
+
+}
+
+.start {
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    /* background: blueviolet; */
+
+   
+    
+}
+
+.start ul {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(148, 148, 149);
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.start ul li a {
+    color: rgb(217, 220, 210);
+    text-decoration: none;
+
+}
+.start ul li .dark {
+    color: rgb(148, 148, 149);
+
+
+}
+
+.end {
+    width: 10%;
+    position: absolute;
+    right: 0;
+    /* bottom: 2.5px; */
+    /* background-color: orange; */
+}
+
+.end > button {
+    width: 47px;
+    height: 23px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: rgba(53, 136, 213, 0.874);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+
+}
+
+.end > button:hover {
+    background-color: rgba(78, 150, 218, 0.874);
+}
+
+.casa {
+    position: fixed;
+    background-color: #e21111;
+}
+
